@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('vista1');
+    return view('vista2');
 });
 
 Auth::routes();
