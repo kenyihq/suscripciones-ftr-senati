@@ -40,9 +40,7 @@
             </span>
         @enderror
 
-        <button type="submit"">
-            {{ __('Iniciar sesion') }}
-        </button>
+        <input type="submit" value="Iniciar sesion">
 
         @if (Route::has('password.request'))
             <a class="btn btn-link" href="{{ route('password.request') }}">
