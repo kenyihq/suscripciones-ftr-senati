@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../img/found.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+}
+.loginbx{
+    width: 320px;
+    height: 420px;
+    background: rgba(52, 51, 52, 0.353);
+    color: #fff;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.loginbx .logo {
+    width: 80px;
+    height: 80px;
+    opacity: 0.9;
+    border-radius: 20%;
+    position: absolute;
+    top: -45px;
+    left: calc(55% - 50px);
+  }
+  .loginbx h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  .loginbx label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .loginbx input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .loginbx input[type="text"],
+  .loginbx input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .loginbx input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .loginbx input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .loginbx a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+  }
+  
+  .loginbx a:hover {
+    color: #fff;
+  }
+
+
+  .txtdinamic{
+      display: flex;
+      width: 600px;
+      height: 42px;
+      color: #fff;
+      font-size: 35px;
+      line-height: 40px;
+      background-color:rgba(52, 51, 52, 0.353);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+      position: absolute;
+      top: -30%;
+      right: 0;
+      bottom: 0;
+      left: 55%;
+      margin: auto;
+
+      overflow: hidden;
+    }
+    .txtdinamicu{
+        display: flex;
+        width: 620px;
+        height: 42px;
+        color: #fff;
+        font-size: 45px;
+        line-height: 40px;
+        background-color:rgba(52, 51, 52, 0.353);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        position: absolute;
+        top: -15%;
+        right: 10%;
+        bottom: 0;
+        left: 55.2%;
+        margin: auto;
+  
+        overflow: hidden;
+      }
+
+  ul{
+      list-style: none;
+      padding-left: 10px;
+      animation: cambiar 7s infinite;
+  }
+
+  ul, p{
+      margin: 0;
+  }
+
+  @keyframes cambiar{
+
+    0%{ margin-top: 0;}
+    20%{ margin-top: 0;}
+
+    25%{ margin-top: -40px;}
+    50%{ margin-top: -40px;}
+    
+    55%{ margin-top: -83px;}
+    80%{ margin-top: -83px;}
+    
+    85%{ margin-top: -40px;}
+    90%{ margin-top: -40px;}
+    
+    100%{ margin-top: 0;}
+    
+  }
+  
