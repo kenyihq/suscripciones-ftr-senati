@@ -38,29 +38,20 @@
                 {{ __('Inicio') }}
             </a>
         </h2>
-            <p>Bienvaenido {{ Auth::user()->name }}</p>
+            <p>Bienvenido {{ Auth::user()->name }}</p>
             <!-- <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                 {{ Auth::user()->name }}
             </a> -->
-
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <a href="{{ route('logout') }}"
+            <div class="logout" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
-                    {{ __('Salir') }}
+                    {{ __('Cerrar sesion') }}
                 </a>
 
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
-            </div>
-            
-             <a href="{{ route('logout') }}"
-                onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                {{ __('Salir') }}
-            </a>
-
         @endguest
                     
         <main class="py-4">

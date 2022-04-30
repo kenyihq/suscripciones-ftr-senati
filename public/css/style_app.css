@@ -22,3 +22,11 @@ h2 a {
     padding-left: 10px;
     animation: cambiar 7s infinite;
 }
+
+.logout a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+}
