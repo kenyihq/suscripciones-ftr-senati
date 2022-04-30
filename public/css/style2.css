@@ -1,11 +1,3 @@
-body{
-    margin: 0;
-    padding: 0;
-    background: url(../img/found.jpg) no-repeat center top;
-    background-size: cover;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100vh;
-}
 .loginbx{
     width: 370px;
     height: 600px;
