@@ -46,7 +46,8 @@ body{
   }
   
   .loginbx input[type="text"],
-  .loginbx input[type="password"] {
+  .loginbx input[type="password"],
+  .loginbx input[type="email"] {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
