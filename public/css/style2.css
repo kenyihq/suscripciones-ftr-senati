@@ -8,7 +8,7 @@ body{
 }
 .loginbx{
     width: 370px;
-    height: 500px;
+    height: 600px;
     background: rgba(52, 51, 52, 0.353);
     color: #fff;
     top: 50%;
@@ -82,6 +82,32 @@ body{
   
   .loginbx a:hover {
     color: rgb(182, 214, 41);
+  }
+
+
+.loginbx button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.loginbx button {
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #ffc107;    
+    border-radius: 20px;
+  }    
+
+.loginbx button a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.loginbx button:hover {
+    cursor: pointer;
+    background: #b80f22;
+    color: rgb(255, 255, 255);
   }
 
 

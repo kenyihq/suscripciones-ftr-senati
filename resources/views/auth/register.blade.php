@@ -51,6 +51,9 @@
             <input id="password-confirm" type="password" name="password_confirmation" required autocomplete="new-password">
             <!--BUTTON-->
             <input type="submit" value="Registrar">
+            <button>
+            <a href="{{ route('login') }}">Iniciar sesion</a>
+            </button>
             <!--Incio opciones:-->
             <a>Somos G1 - Grupo que te ayuda con tus suscripciones</a>
             

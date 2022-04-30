@@ -42,6 +42,10 @@
 
         <input type="submit" value="Iniciar sesion">
 
+        <button>
+            <a href="{{ route('register') }}">Registrate</a>
+        </button>
+
         @if (Route::has('password.request'))
             <a class="btn btn-link" href="{{ route('password.request') }}">
                 {{ __('¿Olvidaste tu contraseña?') }}
