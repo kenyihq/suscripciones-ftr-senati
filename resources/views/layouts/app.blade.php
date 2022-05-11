@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/style_app.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
     <body>        
         @guest
@@ -44,9 +45,12 @@
             </a>
         </h2> -->
             <h2>Bienvenido {{ Auth::user()->name }}</h2>
-            <!-- <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                 {{ Auth::user()->name }}
-            </a> -->
+            </a>
+                
+            <a type="button" class="btn btn-outline-warning" href="/suscripcions">MIS SUSCRIPCIONES</a>
+
             <div class="logout" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
@@ -57,6 +61,7 @@
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
+            </div>
         @endguest
                     
         <main class="py-4">

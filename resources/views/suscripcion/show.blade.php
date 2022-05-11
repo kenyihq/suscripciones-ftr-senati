@@ -11,10 +11,10 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Suscripcion</span>
+                            <span class="card-title">Ver Suscripciones</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('suscripcions.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('suscripcions.index') }}">Atras</a>
                         </div>
                     </div>
 

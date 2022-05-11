@@ -15,12 +15,13 @@
                             <span id="card_title">
                                 {{ __('Suscripcion') }}
                             </span>
+                            
+                            <div class="float-right">
+                                <a href="{{ route('suscripcions.create') }}">
+                                    <img src=" {{ asset('img/add_button.png') }} " alt="aqui img">
 
-                             <div class="float-right">
-                                <a href="{{ route('suscripcions.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
                                 </a>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     @if ($message = Session::get('success'))
@@ -34,7 +35,7 @@
                             <table class="table table-striped table-hover">
                                 <thead class="thead">
                                     <tr>
-                                        <th>No</th>
+                                        <th>N°</th>
                                         
 										<th>Nombre</th>
 										<th>Ciclo</th>
@@ -58,11 +59,11 @@
 
                                             <td>
                                                 <form action="{{ route('suscripcions.destroy',$suscripcion->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('suscripcions.show',$suscripcion->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('suscripcions.edit',$suscripcion->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-outline-primary" href="{{ route('suscripcions.show',$suscripcion->id) }}"><i class="fa fa-fw fa-eye"></i> Ver</a>
+                                                    <a class="btn btn-outline-success" href="{{ route('suscripcions.edit',$suscripcion->id) }}"><i class="fa fa-fw fa-edit"></i> Editar</a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                    <button type="submit" class="btn btn-outline-danger"><i class="fa fa-fw fa-trash"></i> Eliminar</button>
                                                 </form>
                                             </td>
                                         </tr>
