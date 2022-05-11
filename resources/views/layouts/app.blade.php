@@ -33,12 +33,17 @@
                 </li> -->
             @endif
         @else
-        <h2>
+        <div class="logo">
+            <a href="{{ url('/home') }}">
+                <img src="{{ asset('img/logo_senati.png') }}" alt="">
+            </a>
+        </div>
+        <!-- <h2>
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{ __('Inicio') }}
             </a>
-        </h2>
-            <p>Bienvenido {{ Auth::user()->name }}</p>
+        </h2> -->
+            <h2>Bienvenido {{ Auth::user()->name }}</h2>
             <!-- <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                 {{ Auth::user()->name }}
             </a> -->

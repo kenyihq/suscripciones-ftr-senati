@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\SuscripcionController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +19,7 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
+Route::resource('suscripcions', SuscripcionController::class);
 
 Route::get('/prueba', function () {
     return view('vista1');
