@@ -19,8 +19,11 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
+Route::middleware('auth')->group(function () {
 
-Route::resource('suscripcions', SuscripcionController::class);
+    Route::resource('suscripcions', SuscripcionController::class);
+});
+
 
 Route::get('/prueba', function () {
     return view('vista1');
