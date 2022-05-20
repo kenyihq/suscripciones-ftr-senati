@@ -53,7 +53,7 @@
                                             
 											<td>{{ $suscripcion->nombre }}</td>
 											<td>{{ $suscripcion->ciclo }}</td>
-											<td>{{ $suscripcion->precio }}</td>
+											<td>S./ {{ $suscripcion->precio }}</td>
 											<td>{{ $suscripcion->moneda }}</td>
 											<td>{{ $suscripcion->fecha_pago }}</td>
 

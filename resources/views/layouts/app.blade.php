@@ -68,19 +68,22 @@
             </main>
 
         </div>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="footer-copyright text-center py-3">
-                            <p>© 2022 Copyright:
-                                <a href="https://www.senati.edu.pe/" style="text-decoration: none;">SENATI</a>
-                            </p>
+        <div class="container" style="bottom: 0; position:absolute">
+            <footer class="text-center text-lg-start">
+                <div class="container">
+                    <div class="row bottom-aligned">
+                        <div class="col-md-12">
+                            <div class="footer-copyright text-center py-3">
+                                <p>© 2022 Copyright:
+                                    <a href="https://www.senati.edu.pe/" style="text-decoration: none;">SENATI</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+
+        </div>
                     
     </body>
 </html>
