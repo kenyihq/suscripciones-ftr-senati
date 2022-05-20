@@ -19,28 +19,46 @@
                     </div>
 
                     <div class="card-body">
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-4 col-form-label text-md-right"><strong>{{ __('Nombre') }}</strong></label>
 
-                        <div class="form-group">
-                            <strong>Nombre:</strong>
-                            {{ $suscripcion->nombre }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Ciclo:</strong>
-                            {{ $suscripcion->ciclo }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Precio:</strong>
-                            {{ $suscripcion->precio }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Moneda:</strong>
-                            {{ $suscripcion->moneda }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Fecha Pago:</strong>
-                            {{ $suscripcion->fecha_pago }}
-                        </div>
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="name" value="{{ $suscripcion->nombre }}" disabled>
+                            </div>
 
+                        </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-4 col-form-label text-md-right"><strong>{{ __('Ciclo') }}</strong></label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="name" value="{{ $suscripcion->ciclo }}" disabled>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-4 col-form-label text-md-right"><strong>{{ __('Precio') }}</strong></label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="name" value="{{ $suscripcion->precio }}" disabled>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-4 col-form-label text-md-right"><strong>{{ __('Moneda') }}</strong></label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="name" value="{{ $suscripcion->moneda }}" disabled>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-4 col-form-label text-md-right"><strong>{{ __('Fecha de pago') }}</strong></label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="name" value="{{ $suscripcion->fecha_pago }}" disabled>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
