@@ -19,6 +19,7 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
+
 Route::resource('suscripcions', SuscripcionController::class);
 
 Route::get('/prueba', function () {

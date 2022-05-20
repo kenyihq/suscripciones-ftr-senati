@@ -33,39 +33,54 @@
                     <a class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a>
                 </li> -->
             @endif
-        @else
+        @else        
         <div class="logo">
             <a href="{{ url('/home') }}">
-                <img src="{{ asset('img/logo_senati.png') }}" alt="">
-            </a>
+                <img src="{{ asset('img/logo_senati.svg') }}" alt="">
+            </a>             
         </div>
-        <!-- <h2>
-            <a class="navbar-brand" href="{{ url('/') }}">
-                {{ __('Inicio') }}
-            </a>
-        </h2> -->
-            <h2>Bienvenido {{ Auth::user()->name }}</h2>
-            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                {{ Auth::user()->name }}
-            </a>
-                
-            <a type="button" class="btn btn-outline-warning" href="/suscripcions">MIS SUSCRIPCIONES</a>
-
-            <div class="logout" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                                    document.getElementById('logout-form').submit();">
-                    {{ __('Cerrar sesion') }}
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <span>Bienvenido {{ Auth::user()->name }}</h2></span> 
                 </a>
-
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                <a class="navbar-brand" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        <button class="btn btn-outline-danger">
+                            {{ __('Cerrar sesion') }}
+                        </button>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
             </div>
+        </nav>
+        <div class="container">
+            
+            <a type="button" class="btn btn-outline-warning" href="/suscripcions">MIS SUSCRIPCIONES</a>
+        </div>
+
         @endguest
+
+        <div class="container">
+            <main class="py-4">
+                @yield('content')
+            </main>
+
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-copyright text-center py-3">
+                            <p>© 2022 Copyright:
+                                <a href="https://www.senati.edu.pe/" style="text-decoration: none;">SENATI</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
                     
-        <main class="py-4">
-            @yield('content')
-        </main>
     </body>
 </html>
