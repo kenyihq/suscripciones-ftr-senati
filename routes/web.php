@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('auth/login');
+    return view('index');
 });
 
 Route::middleware('auth')->group(function () {
@@ -25,8 +25,8 @@ Route::middleware('auth')->group(function () {
 });
 
 
-Route::get('/prueba', function () {
-    return view('vista1');
+Route::get('/test', function () {
+    return view('index');
 });
 
 Auth::routes();
