@@ -36,13 +36,13 @@
         @else        
         <div class="logo">
             <a href="{{ url('/home') }}">
-                <img src="{{ asset('img/logo_senati.svg') }}" alt="">
+                <img class="img-fluid" src="{{ asset('img/logo_senati.svg') }}" alt="">
             </a>             
         </div>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <span>Bienvenido {{ Auth::user()->name }}</h2></span> 
+                    <span>GRUPO 1</h2></span> 
                 </a>
                 <a class="navbar-brand" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
@@ -55,11 +55,10 @@
                 </form>
             </div>
         </nav>
-        <div class="container">
-            
+        <div class="container">            
             <a type="button" class="btn btn-outline-warning" href="/suscripcions">MIS SUSCRIPCIONES</a>
         </div>
-
+        
         @endguest
 
         <div class="container">
@@ -68,22 +67,20 @@
             </main>
 
         </div>
-        <div class="container" style="bottom: 0; position:absolute">
+        <center>
             <footer class="text-center text-lg-start">
                 <div class="container">
                     <div class="row bottom-aligned">
                         <div class="col-md-12">
                             <div class="footer-copyright text-center py-3">
-                                <p>© 2022 Copyright:
-                                    <a href="https://www.senati.edu.pe/" style="text-decoration: none;">SENATI</a>
+                                <p>© 2022 Copyright Grupo 1 -
+                                    <a href="https://www.senati.edu.pe/" style="text-decoration: none; color: white;"> SENATI</a>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
-
-        </div>
-                    
+        </center>
     </body>
 </html>
